@@ -70,44 +70,200 @@
 
     <!-- Home Page Start -->
     <div class="container">
-        <div class="col hero">
+        <div class="col hero ">
             <!-- Hero Slider -->
-            <div class="hero-hanger col-12">
-                <div class="hero-text flex-column align-content-center h-100">
+            <div class="hero-hanger col-12 ">
+                <!-- <div class="hero-text flex-column align-content-center h-100">
                     <p>Fantastic Black Friday</p>
                     <h1>Limited Time Offer! <br>
                         Up to 50% OFF
                     </h1>
                     <p>Redefine Your Everyday Style</p>
+                </div> -->
+                <!-- slider -->
+                <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselContent">
+                        <!-- Slides will load here dynamically -->
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="slider-btn carousel-control-prev " type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                        <i class="bi bi-chevron-left text-warning fs-2 fw-bold"></i>
+                    </button>
+                    <button class="slider-btn carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                         <i class="bi bi-chevron-right text-warning fs-2 fw-bold"></i>
+                    </button>
                 </div>
             </div>
             <!-- Brands -->
-            <div class="hero-brands col-12 mt-3">
-                <h3 class="text-center">What We Sale</h3>
-                <p>Selections for your Dreams</p>
-                <div class="brand-container d-flex">
-                    <!-- card -->
-                     <div class="card p-3 me-3">
-                        <img class="my-auto" src="./src/img/Breitling-Logo.png" alt="logo-1">    
-                     </div>
-                     <div class="card p-3 me-3">
-                        <img class="my-auto" src="./src/img/Breitling-Logo.png" alt="logo-1">    
-                     </div>
-                     <div class="card p-3 me-3">
-                        <img class="my-auto" src="./src/img/Breitling-Logo.png" alt="logo-1">    
-                     </div>
-                     <div class="card p-3 me-3">
-                        <img class="my-auto" src="./src/img/Breitling-Logo.png" alt="logo-1">    
-                     </div>
-                     <div class="card p-3 me-3">
-                        <img class="my-auto" src="./src/img/Breitling-Logo.png" alt="logo-1">    
-                     </div>
-                     <div class="card p-3 me-3">
-                        <img class="my-auto" src="./src/img/Breitling-Logo.png" alt="logo-1">    
-                     </div>
-                </div>
+            <div class="hero-brands mt-3 mb-4">
+                <p class="text-center text-secondary fs-4">Discover Our Brands</p>
+                <div class="brand_container justify-content-center row w-100 mx-auto" id="brand_container">
+                    <!-- card load here-->
+                     
             </div>
         </div>
+        <!-- flash sale -->
+         <div class="flash_container mb-4 bg-light p-5">
+            <div class="coundown_container d-flex">
+                 <p class="text-secondary fs-4">Flash Deal <span>: </span></p>
+                 <p class="text-warning fs-4"> Date</p>
+            </div>
+           <div class="flash_card_container row w-100 justify-content-center " id="flash_card_container">
+                 <div class="col-6 col-md-3 mt-4">
+                    <div class="card shadow-sm border-0 flash_deal_card h-100">
+                        <!-- Product Image -->
+                            <div class="p-3 text-center bg-white">
+                                <img src="./src/img/watche- (10).jpg" 
+                                    class="img-fluid" 
+                                    alt="Omega Watch" 
+                                    style="width: 150px; height: 150px; object-fit: contain;">
+                            </div>
+
+                        <!-- Card Body -->
+                        <div class="card-body bg-light">
+                            <h6 class="text-dark fw-bold text-center mb-2">OMEGA OM5000</h6>
+                            <div class="d-flex justify-content-between small">
+                                <span class="fw-semibold text-secondary">Brand:</span>
+                                <span class="fw-semibold text-dark">Omega</span>
+                            </div>
+                            <div class="d-flex justify-content-between small">
+                                <span class="fw-semibold text-secondary">Price:</span>
+                                <span class="fw-bold text-danger">Rs. 300,000</span>
+                            </div>
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span class="fw-semibold text-secondary">Model:</span>
+                                <span class="fw-semibold text-dark">OM5000</span>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-warning btn-sm fw-semibold px-3">
+                                <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Sale Badge -->
+                        <span class="position-absolute top-0 start-0 m-2 badge bg-danger">
+                        Flash Deal
+                        </span>
+                    </div>
+                </div>
+           </div>
+            
+         </div>
+
+         <!-- All products -->
+          <div class="all_item_container mb-4 p-5 overflow-scroll " style="height: 100vh;">
+            <div class="item_container d-flex">
+                 <p class="text-secondary fs-4">All Items <span>: </span></p>
+                 <p class="text-warning fs-4"> 99 Items</p>
+            </div>
+            <div class="all_item_card_container w-100 justify-content-center row" id="all_item_card_container">
+                <!--All item card load here -->
+
+                    <div class="col-6 col-md-3 mt-4">
+                        <div class="card shadow-lg border-0 flash_deal_card h-100">
+                            <!-- Product Image -->
+                                <div class="p-3 text-center bg-white">
+                                    <img src="./src/img/watche- (10).jpg" 
+                                        class="img-fluid" 
+                                        alt="Omega Watch" 
+                                        style="width: 150px; height: 150px; object-fit: contain;">
+                                </div>
+
+                            <!-- Card Body -->
+                            <div class="card-body bg-light">
+                                <h6 class="text-dark fw-bold text-center mb-2">OMEGA OM5000</h6>
+                                <div class="d-flex justify-content-between small">
+                                    <span class="fw-semibold text-secondary">Brand:</span>
+                                    <span class="fw-semibold text-dark">Omega</span>
+                                </div>
+                                <div class="d-flex justify-content-between small">
+                                    <span class="fw-semibold text-secondary">Price:</span>
+                                    <span class="fw-bold text-danger">Rs. 300,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between small mb-3">
+                                    <span class="fw-semibold text-secondary">Model:</span>
+                                    <span class="fw-semibold text-dark">OM5000</span>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-warning btn-sm fw-semibold px-3">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Sale Badge -->
+                            <!-- <span class="position-absolute top-0 start-0 m-2 badge bg-danger">
+                            Flash Deal
+                            </span> -->
+                        </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+                <div class="container">
+                    <div class="row gy-4">
+
+                    <!-- Column 1: Brand -->
+                    <div class="col-12 col-md-4">
+                        <h4 class="text-warning fw-bold mb-3">SINON</h4>
+                        <p class="small text-secondary">
+                        Sinon Wrist Watch Store offers premium timepieces from world-renowned brands like Omega, Seiko, and Tissot. 
+                        Our mission is to bring timeless elegance, precision, and quality craftsmanship to every wrist.
+                        </p>
+                        <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-5"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="col-6 col-md-2">
+                        <h6 class="fw-bold mb-3 text-warning">Quick Links</h6>
+                        <ul class="list-unstyled small">
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">About</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">Shop</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Customer Service -->
+                    <div class="col-6 col-md-3">
+                        <h6 class="fw-bold mb-3 text-warning">Customer Service</h6>
+                        <ul class="list-unstyled small">
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">FAQs</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">Warranty</a></li>
+                        <li><a href="#" class="text-light text-decoration-none d-block mb-1">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Contact Info -->
+                    <div class="col-12 col-md-3">
+                        <h6 class="fw-bold mb-3 text-warning">Contact Us</h6>
+                        <p class="small mb-1"><i class="bi bi-geo-alt-fill text-warning"></i> 125 Main Street, Colombo, Sri Lanka</p>
+                        <p class="small mb-1"><i class="bi bi-telephone-fill text-warning"></i> +94 71 234 5678</p>
+                        <p class="small mb-1"><i class="bi bi-envelope-fill text-warning"></i> info@sinonwatches.com</p>
+                    </div>
+
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-secondary my-4">
+
+                    <!-- Bottom text -->
+                    <div class="text-center small text-secondary">
+                    © 2025 Sinon Wrist Watch Store. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+ 
     </div>
 
     
@@ -115,5 +271,11 @@
 
     <!-- bootstrap link -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- slider js -->
+     <script src="./src/js/slider.js"></script>
+    <!-- brand js -->
+     <script src="./src/js/ui.js"></script>
+    <!-- flash deal js -->
+     <script src="./src/js/flash-deals.js"></script>
 </body>
 </html>
