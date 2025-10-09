@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Sinon Wrist Watch Store</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- ✅ Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- ✅ Custom CSS -->
+  <link rel="stylesheet" href="./src/css/styles.css" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .about-hero {
+      background: url('./src/img/about.jpg') center/cover no-repeat;
+      min-height: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-hero h1 {
+      font-weight: 700;
+    }
+
+    .about-content {
+      padding: 60px 0;
+    }
+
+    .brand-values i {
+      font-size: 2rem;
+      color: #ffc107;
+    }
+
+    .brand-values h5 {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🌟 Navbar Section -->
+  <div id="navbar">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5">
+      <a class="navbar-brand fw-bold text-warning" href="#">SINON</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse flex flex-column" id="menu">
+        <div class="container-fluid dropdown-navbar mt-2">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="header mt-2">
+          <div class="social_media w-100 d-flex justify-content-between p-3">
+            <a href="#" class="text-white p-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-twitter-x"></i></a>
+          </div>
+
+          <ul class="d-flex flex-column list-unstyled text-center">
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="index.html">Home</a>
+            </li>
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="#shop">Shop</a>
+            </li>
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="about.html">About</a>
+            </li>
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="p-3 d-flex justify-content-between">
+            <a class="btn btn-outline-warning"><i class="bi bi-cart-dash px-3"></i></a>
+            <a class="btn btn-outline-warning">Login</a>
+            <a class="btn btn-outline-warning">Sign In</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="desktop-login">
+        <a href="#"><button class="btn btn-outline-warning me-3">Login</button></a>
+        <a href="#"><button class="btn btn-outline-warning me-3">Sign In</button></a>
+      </div>
+    </nav>
+
+    <div class="main-header bg-warning px-5 py-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Left: Social Icons -->
+        <div class="social_media d-flex">
+          <a href="#" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-pinterest"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-twitter-x"></i></a>
+        </div>
+
+        <!-- Middle: Nav Links -->
+        <ul class="nav mx-auto text-center mb-0">
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="index.html">Home</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="#shop">Shop</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="about.html">About</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right: Cart -->
+        <a href="#" class="btn btn-outline-light">
+          <i class="bi bi-cart-dash"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🌆 Hero Section -->
+  <section class="about-hero text-center">
+    <div>
+      <h1>About Sinon Wrist Watch Store</h1>
+      <p class="lead">Timeless elegance, crafted with precision and passion.</p>
+    </div>
+  </section>
+
+  <!-- 🕰️ About Content -->
+  <section class="about-content container text-center">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="fw-bold mb-4 text-warning">Our Story</h2>
+        <p class="mb-4">
+          Established with a passion for fine timepieces, <strong>Sinon Wrist Watch Store</strong> brings you the
+          world’s most exquisite collection of watches — from iconic luxury brands to modern innovations. Our goal is
+          simple: to connect every customer with a watch that reflects their style, precision, and purpose.
+        </p>
+        <p>
+          Whether you're seeking a bold sports chronograph or a timeless classic for formal wear, Sinon offers expert
+          craftsmanship, authenticity, and customer trust with every purchase.
+        </p>
+      </div>
+    </div>
+
+    <!-- 💎 Brand Values -->
+    <div class="brand-values mt-5">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-4">
+          <i class="bi bi-award"></i>
+          <h5>Premium Quality</h5>
+          <p class="small">Only the finest, genuine timepieces.</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <i class="bi bi-lightning-charge"></i>
+          <h5>Innovation</h5>
+          <p class="small">Modern design meets smart technology.</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <i class="bi bi-people"></i>
+          <h5>Customer Trust</h5>
+          <p class="small">Your satisfaction is our promise.</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <i class="bi bi-globe"></i>
+          <h5>Worldwide Reach</h5>
+          <p class="small">Delivering excellence across the globe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧭 Call to Action -->
+  <section class="text-center bg-warning text-white py-5">
+    <h3 class="fw-bold">Discover Your Perfect Timepiece Today</h3>
+    <p>Explore our latest collections and experience true craftsmanship.</p>
+    <a href="shop.html" class="btn btn-light mt-3 fw-semibold px-4">Shop Now</a>
+  </section>
+
+  <!-- 🌙 Footer -->
+  <div id="footer">
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Brand Info -->
+          <div class="col-12 col-md-4">
+            <h4 class="text-warning fw-bold mb-3">SINON</h4>
+            <p class="small text-secondary">
+              Sinon Wrist Watch Store offers premium timepieces from world-renowned brands like Omega, Seiko, and Tissot.
+              Our mission is to bring timeless elegance, precision, and quality craftsmanship to every wrist.
+            </p>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="text-light"><i class="bi bi-facebook fs-5"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-twitter-x fs-5"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube fs-5"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-2">
+            <h6 class="fw-bold mb-3 text-warning">Quick Links</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">About</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">Shop</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Customer Service -->
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold mb-3 text-warning">Customer Service</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">FAQs</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">Shipping & Returns</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">Warranty</a></li>
+              <li><a href="#" class="text-light text-decoration-none d-block mb-1">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-12 col-md-3">
+            <h6 class="fw-bold mb-3 text-warning">Contact Us</h6>
+            <p class="small mb-1"><i class="bi bi-geo-alt-fill text-warning"></i> 125 Main Street, Colombo, Sri Lanka</p>
+            <p class="small mb-1"><i class="bi bi-telephone-fill text-warning"></i> +94 71 234 5678</p>
+            <p class="small mb-1"><i class="bi bi-envelope-fill text-warning"></i> info@sinonwatches.com</p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="border-secondary my-4" />
+
+        <!-- Footer Bottom -->
+        <div class="text-center small text-secondary">
+          © 2025 Sinon Wrist Watch Store. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
