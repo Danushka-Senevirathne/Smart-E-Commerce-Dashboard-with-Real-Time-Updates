@@ -13,59 +13,87 @@
 </head>
 <body>
     <!-- navigation bar start -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5">
-        <a class="navbar-brand" href="#">SINON</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
       
-        <div class="collapse navbar-collapse flex flex-column" id="menu">
-            <div class="container-fluid dropdown-navbar">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="submit">Search</button>
-                </form>
-            </div>
-            <div class="header  mt-1">
-                <ul class=" d-flex flex-column list-unstyled "id="mobile-dropdown">
-                    <li class="me-5 p-3  fw-bold text-center w-100 ">
-                        <a class="text-decoration-none text-white " href="#">Home</a>
-                    </li>
-                    <li class="me-5 p-3  fw-bold text-center w-100">
-                        <a class="text-decoration-none text-white" href="#">About</a>
-                    </li>
-                    <li class="me-5 p-3  fw-bold text-center w-100">
-                        <a class="text-decoration-none text-white" href="#">Contact</a>
-                    </li>
-                    <div class="me-5 p-3  fw-bold text-center w-100 d-flex" >
-                        <!-- <button class="w-100 btn btn-outline-warning me-3  bg-transparent py-2"><a class=" text-warning text-decoration-none" href="#">Login</a></button>
-                        <button class="w-100 btn btn-outline-warning me-3  bg-transparent py-2"><a class=" text-warning text-decoration-none" href="#">Sign In</a></button> -->
-                        <a class="w-100 mx-auto" href="#"> <button class="btn px-3  me-3  btn-outline-warning ">Login</button></a>
-                        <a class="w-100 mx-auto" href="#"> <button class="btn px-3  me-3  btn-outline-warning ">Sign In</button></a>
-                    </div>
-                </ul> 
-            </div>
-           
+     <div id="navbar">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5">
+      <a class="navbar-brand fw-bold text-warning" href="#">SINON</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse flex flex-column" id="menu">
+        <div class="container-fluid dropdown-navbar mt-2">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
         </div>
-        <div class="desktop-login ">
-           <a href="#"> <button class="btn px-3  me-3  btn-outline-warning ">Login</button></a>
-           <a href="#"> <button class="btn px-3  me-3  btn-outline-warning ">Sign In</button></a>
+
+        <div class="header mt-2">
+          <div class="social_media w-100 d-flex justify-content-between p-3">
+            <a href="#" class="text-white p-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="text-white p-2"><i class="bi bi-twitter-x"></i></a>
+          </div>
+
+          <ul class="d-flex flex-column list-unstyled text-center">
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="index.html">Home</a>
+            </li>
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="#shop">Shop</a>
+            </li>
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="about.html">About</a>
+            </li>
+            <li class="p-3 fw-bold">
+              <a class="text-decoration-none text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="p-3 d-flex justify-content-between">
+            <a class="btn btn-outline-warning"><i class="bi bi-cart-dash px-3"></i></a>
+            <a class="btn btn-outline-warning">Login</a>
+            <a class="btn btn-outline-warning">Sign In</a>
+          </div>
         </div>
+      </div>
+
+      <div class="desktop-login">
+        <a href="#"><button class="btn btn-outline-warning me-3">Login</button></a>
+        <a href="#"><button class="btn btn-outline-warning me-3">Sign In</button></a>
+      </div>
     </nav>
-    <div class="main-header bg-warning">
-          <ul class="d-flex justify-content-center  list-unstyled text-decoration-none">
-            <li class="me-5 p-3  fw-bold ">
-                <a class="text-decoration-none text-white" href="#">Home</a>
-            </li>
-            <li class="me-5 p-3  fw-bold ">
-                <a class="text-decoration-none text-white" href="#">About</a>
-            </li>
-            <li class="me-5 p-3  fw-bold ">
-                <a class="text-decoration-none text-white" href="#">Contact </a>
-            </li>
-          </ul>      
+
+    <div class="main-header bg-warning px-5 py-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Left: Social Icons -->
+        <div class="social_media d-flex">
+          <a href="#" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-pinterest"></i></a>
+          <a href="#" class="text-white mx-3"><i class="bi bi-twitter-x"></i></a>
+        </div>
+
+        <!-- Middle: Nav Links -->
+        <ul class="nav mx-auto text-center mb-0">
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="index.html">Home</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="#shop">Shop</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="about.html">About</a></li>
+          <li class="nav-item mx-3"><a class="nav-link fw-bold text-white" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right: Cart -->
+        <a href="#" class="btn btn-outline-light">
+          <i class="bi bi-cart-dash"></i>
+        </a>
+      </div>
     </div>
+  </div>
     <!-- navigation bar end -->
 
     <!-- Home Page Start -->
