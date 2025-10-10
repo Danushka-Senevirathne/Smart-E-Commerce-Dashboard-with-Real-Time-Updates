@@ -35,9 +35,9 @@ fetch('../../data/products.js')
                                 <span class="fw-semibold text-dark">${product.name}</span>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-warning btn-sm fw-semibold px-3">
+                                <a href="cart.html" class="btn btn-warning btn-sm fw-semibold px-3">
                                 <i class="bi bi-cart-plus"></i> Add to Cart
-                                </button>
+                                </a>
                             </div>
                         </div>
 
