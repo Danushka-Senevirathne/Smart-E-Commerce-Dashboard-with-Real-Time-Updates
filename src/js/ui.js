@@ -7,7 +7,9 @@ fetch('../../data/brands.js')
     brands.forEach((brand, index) => {
       html += `
         <div class="card col-md-1 col-4 my-2  ${index === 0 ? 'active' : ''} p-3 me-3 ">
-          <img src="${brand.image}" class=" w-100 text-center my-auto" alt="${brand.brand}">
+          <a href="${brand.url}">
+            <img src="${brand.image}" class=" w-100 text-center my-auto" alt="${brand.brand}">
+          </a>
         </div>
       `;
     });
